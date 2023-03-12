@@ -1,0 +1,113 @@
+body{
+    background: #C7D2F8;
+}
+.content{
+    max-width: 90%;
+    margin: 2% auto;
+}
+h1{
+    font-size: 8vw;
+}
+.bayanComponent{
+    padding: 1.5vw 1.5vw;
+    font-size: 5.5vw;
+    background: #E1E8FF;
+    border-width: 0.2vw 0.2vw 0;
+    border-style: solid;
+    border-color: #6981D6;
+    color: #6981D6;
+}
+.bayanComponent:last-child{
+    border-width: 0.2vw 0.2vw 0.2vw;
+}
+.bayanComponent:hover{
+    background: #F1F1F1;
+}
+.bayanComponent input{
+    display: none;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.memesContent{
+    display: flex;
+    justify-content: center;
+    opacity:1;
+    clear: both;
+    height: 0;
+    transform: scale(0);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.4s ease-in 0.15s;
+}
+.icon{
+    font-size: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in 0.15s;
+    display: none;
+}
+img{
+    margin: 0.5em;
+    height: 12em;
+    max-width: 100%;
+}
+@media (hover: hover) {
+    .bayan:hover .bayanComponent{
+        color: black;
+        cursor: pointer;
+    }
+    .bayan:hover .icon{
+        display: block;
+    }
+    label:hover{
+        cursor: pointer;
+    }
+    .bayanComponent:hover .icon{
+        transform: rotate(45deg);
+        transition: transform 0.2s ease-in 0.15s;
+    }
+    .bayanComponent:hover .memesContent{
+        opacity: 1;
+        transform: scale(1);
+        height: 13em;
+    }
+}
+.bayanComponent input:checked + label{
+    color: #000000;
+}
+.bayanComponent input:checked + label + .memesContent{
+    transform: scale(1);
+    height: 13em;
+    opacity: 1;
+}
+.bayanComponent input:checked + label .icon{
+    transform: rotate(45deg);
+}
+.bayanComponent input:active + .title{
+    color: #6981D6;
+}
+@media only screen and (min-width: 820px) {
+    .content{
+        max-width: 70vw;
+    }
+    h1{
+        font-size: 3em;
+    }
+    .bayanComponent{
+        font-size: 2em;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .content{
+        max-width: 70vw;
+    }
+    h1{
+        font-size: 2.5vw;
+    }
+    .bayanComponent{
+        font-size: 2vw;
+    }
+}
+
+
