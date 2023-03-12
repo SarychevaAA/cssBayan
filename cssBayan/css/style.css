@@ -10,7 +10,7 @@ h1{
 }
 .bayanComponent{
     padding: 1.5vw 1.5vw;
-    font-size: 6vw;
+    font-size: 5.5vw;
     background: #E1E8FF;
     border-width: 0.2vw 0.2vw 0;
     border-style: solid;
@@ -40,7 +40,7 @@ h1{
     transform: scale(0);
     overflow: hidden;
     text-align: center;
-    transition: all 0.5s ease-in 0.15s, transform 0.3s ease-in 0.15s;
+    transition: all 0.4s ease-in 0.15s, transform 0.3s ease-in 0.15s;
 }
 .icon{
     font-size: 100%;
@@ -56,6 +56,7 @@ img{
 @media (hover: hover) {
     .bayan:hover .bayanComponent{
         color: black;
+        cursor: pointer;
     }
     .bayan:hover .icon{
         display: block;
@@ -67,7 +68,7 @@ img{
         opacity: 1;
         transform: scale(1);
         height: 100%;
-        transition: all 0.5s ease-in 0.15s;
+        transition: all 0.4s ease-in 0.15s;
     }
     .bayanComponent:hover .icon{
         transform: rotate(45deg);
@@ -81,10 +82,13 @@ img{
     transform: scale(1);
     height: 100%;
     opacity: 1;
-    transition: transform 0.1s ease-in-out 0.15s, height 0.5s ease-in-out 0.15s, opacity 0.5s ease-in-out 0.15s ;
+    transition: transform 0.1s ease-in-out 0.15s, height 0.4s ease-in-out 0.15s, opacity 0.4s ease-in-out 0.15s ;
 }
 .bayanComponent input:checked + label .icon{
     transform: rotate(45deg);
+}
+.bayanComponent input:active + .title{
+    color: #6981D6;
 }
 @media only screen and (min-width: 820px) {
     .content{
